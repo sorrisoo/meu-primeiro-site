@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styly.css">
+    <link rel="shortcut icon" href="IMAGENS/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Contato | SLOGAN</title>
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="pular-para-conteudo">Pular para o conteúdo principal</a>
+
+    <DIV class="LOG">
+    <h1> SLOGAN </h1>
+    </DIV>
+    <Img class="imglogo"  src="IMAGENS/logo.png" alt="LOGO"></Img>
+     <nav>
+        <a href="sobre.html">sobre o projeto</a>
+        <a href="acenssibilidade.html">Acenssibilidade digital</a>
+        <a href="tecnologia.html">tecnologia acesstiva</a>
+        <a href="dicas.html">dicas de inclusão</a>
+        <a href="contato.html">contato</a>
+     </nav>
+
+    <div class="acessibilidade-barra" role="region" aria-label="Ferramentas de acessibilidade">
+        <button type="button" id="btn-diminuir-fonte" class="acessibilidade-barra__botao" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="btn-aumentar-fonte" class="acessibilidade-barra__botao" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" id="btn-alto-contraste" class="acessibilidade-barra__botao" aria-label="Ativar ou desativar alto contraste" aria-pressed="false">◐</button>
+    </div>
+
+    <main id="conteudo-principal">
+
+        <section class="pagina-hero">
+            <div class="container">
+                <p class="pagina-hero__eyebrow">Fale com a gente</p>
+                <h1 class="pagina-hero__titulo">Entre em Contato</h1>
+                <p class="pagina-hero__descricao">
+                    Dúvidas, sugestões ou relatos de problemas de acessibilidade?
+                    Preencha o formulário abaixo ou use um dos nossos outros canais.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao-conteudo">
+            <div class="container pagina-contato">
+
+                <form class="formulario-contato" action="#" method="get">
+
+                    <fieldset class="formulario-contato__grupo">
+                        <legend class="formulario-contato__legenda">Seus dados</legend>
+
+                        <div class="campo">
+                            <label for="campo-nome">Nome completo</label>
+                            <input type="text" id="campo-nome" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="campo-linha">
+                            <div class="campo">
+                                <label for="campo-email">E-mail</label>
+                                <input type="email" id="campo-email" name="email" placeholder="seuemail@exemplo.com" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="campo-telefone">Telefone</label>
+                                <input type="tel" id="campo-telefone" name="telefone" placeholder="(00) 00000-0000">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="formulario-contato__grupo">
+                        <legend class="formulario-contato__legenda">Sua mensagem</legend>
+
+                        <div class="campo">
+                            <label for="campo-assunto">Assunto</label>
+                            <input type="text" id="campo-assunto" name="assunto" placeholder="Resumo do assunto" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="campo-motivo">Motivo do contato</label>
+                            <select id="campo-motivo" name="motivo" required>
+                                <option value="" selected disabled>Selecione uma opção</option>
+                                <option value="duvida">Dúvida</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="elogio">Elogio</option>
+                                <option value="problema-acessibilidade">Problema de acessibilidade</option>
+                                <option value="solicitacao-informacao">Solicitação de informação</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="campo-mensagem">Mensagem</label>
+                            <textarea id="campo-mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+
+                        <div class="campo campo--checkbox">
+                            <input type="checkbox" id="campo-termos" name="termos" required>
+                            <label for="campo-termos">Li e concordo com os termos de uso e a política de privacidade.</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="formulario-contato__botoes">
+                        <button type="submit" class="botao botao--primario">Enviar mensagem</button>
+                        <button type="reset" class="botao botao--secundario">Limpar formulário</button>
+                    </div>
+
+                </form>
+
+                <aside class="info-contato" aria-label="Informações de contato">
+
+                    <div class="info-contato__bloco">
+                        <h2 class="info-contato__titulo">📍 Endereço</h2>
+                        <p>Rua da Inclusão, 123 — Bairro Acessível<br>São Paulo — SP, 01000-000</p>
+                    </div>
+
+                    <div class="info-contato__bloco">
+                        <h2 class="info-contato__titulo">📞 Telefone</h2>
+                        <p>(11) 4000-0000</p>
+                    </div>
+
+                    <div class="info-contato__bloco">
+                        <h2 class="info-contato__titulo">✉️ E-mail</h2>
+                        <p>contato@slogan.com.br</p>
+                    </div>
+
+                    <div class="info-contato__bloco">
+                        <h2 class="info-contato__titulo">🕘 Horário de atendimento</h2>
+                        <p>Segunda a sexta, das 9h às 18h</p>
+                    </div>
+
+                    <div class="info-contato__bloco">
+                        <h2 class="info-contato__titulo">🌐 Redes sociais</h2>
+                        <ul class="info-contato__redes">
+                            <li><a href="#">Instagram: @slogan</a></li>
+                            <li><a href="#">LinkedIn: /slogan</a></li>
+                            <li><a href="#">YouTube: SLOGAN</a></li>
+                        </ul>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape__interno">
+
+            <div class="rodape__sobre">
+                <p class="rodape__logo">SLOGAN</p>
+                <p class="rodape__texto">Projeto educacional sobre acessibilidade digital e tecnologias assistivas.</p>
+            </div>
+
+        </div>
+        <p class="rodape__copy">&copy; 2026 SLOGAN. Projeto acadêmico sem fins comerciais.</p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <!-- ===================== ACESSIBILIDADE: alto contraste e tamanho de fonte ===================== -->
+    <script>
+    (function () {
+        var CHAVE_CONTRASTE = "slogan-alto-contraste";
+        var CHAVE_FONTE = "slogan-tamanho-fonte";
+        var PASSO_FONTE = 12.5;
+        var FONTE_MIN = 100;
+        var FONTE_MAX = 150;
+
+        function aplicarContraste(ativo) {
+            document.body.classList.toggle("alto-contraste", ativo);
+            var botao = document.getElementById("btn-alto-contraste");
+            if (botao) {
+                botao.setAttribute("aria-pressed", ativo ? "true" : "false");
+            }
+        }
+
+        function aplicarFonte(tamanho) {
+            document.documentElement.style.fontSize = tamanho + "%";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var contrasteSalvo = localStorage.getItem(CHAVE_CONTRASTE) === "true";
+            aplicarContraste(contrasteSalvo);
+
+            var fonteSalva = parseFloat(localStorage.getItem(CHAVE_FONTE)) || 100;
+            aplicarFonte(fonteSalva);
+
+            var botaoContraste = document.getElementById("btn-alto-contraste");
+            if (botaoContraste) {
+                botaoContraste.addEventListener("click", function () {
+                    var ativo = !document.body.classList.contains("alto-contraste");
+                    aplicarContraste(ativo);
+                    localStorage.setItem(CHAVE_CONTRASTE, ativo);
+                });
+            }
+
+            var botaoMais = document.getElementById("btn-aumentar-fonte");
+            var botaoMenos = document.getElementById("btn-diminuir-fonte");
+
+            if (botaoMais) {
+                botaoMais.addEventListener("click", function () {
+                    var atual = parseFloat(localStorage.getItem(CHAVE_FONTE)) || 100;
+                    var novo = Math.min(FONTE_MAX, atual + PASSO_FONTE);
+                    aplicarFonte(novo);
+                    localStorage.setItem(CHAVE_FONTE, novo);
+                });
+            }
+
+            if (botaoMenos) {
+                botaoMenos.addEventListener("click", function () {
+                    var atual = parseFloat(localStorage.getItem(CHAVE_FONTE)) || 100;
+                    var novo = Math.max(FONTE_MIN, atual - PASSO_FONTE);
+                    aplicarFonte(novo);
+                    localStorage.setItem(CHAVE_FONTE, novo);
+                });
+            }
+        });
+    })();
+    </script>
+
+</body>
+</html>
